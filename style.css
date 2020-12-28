@@ -1,0 +1,83 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: url('bg.png') no-repeat;
+    background-size: 100vw 100vh;
+}
+.dino img{
+    height: 18vh;
+}
+.dragon img{
+    height: 18vh;
+}
+.dino{
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 98px;
+}
+.dragon{
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 22px;
+}
+.scoreboard{
+    text-transform: capitalize;
+    border: 2px solid black;
+    display: inline-block;
+    position: absolute;
+    right: 22px;
+    height: 26px;
+    padding: 2px;
+    top: 5%;
+    width: 115px;
+}
+.notice{
+    
+    font-size: 38px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    display: inline-block;
+    position: absolute;
+    left: 35%;
+    top: 4%;
+}
+.animation{
+    animation: dragon1 1.5s linear infinite;
+}
+@keyframes dragon1{
+    0%{
+        right: 0%;
+    }
+    100%{
+        right: 100%;
+    }
+}
+.dino-animate{
+    animation: dino1 0.7s linear infinite  ;
+}
+@keyframes dino1{
+    0%{
+        bottom: 0px;
+    }
+    50%{
+        bottom: 350px;
+    }
+    100%{
+        bottom: 0px;
+    }
+}
+.score-design{
+    margin-top: 20px;
+    margin-left: 124px;
+}
+.name{
+    margin-top: -26px;
+    margin-left: 67px;
+}
