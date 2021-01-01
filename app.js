@@ -1,8 +1,8 @@
 score_print=0
 value_score=true
-// window.alert(
-//     'Welcome to dino game.if you are in computer use left arrow key to move left and right arrow key to move right and space-bar to jump and start to the game'
-// )
+window.alert(
+    'Welcome to dino game.if you are in computer use left arrow key to move left and right arrow key to move right and space-bar to jump and start to the game'
+)
 
 let audio=new Audio('music.mp3')
 audio.loop=true
