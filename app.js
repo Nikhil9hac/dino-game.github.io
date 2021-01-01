@@ -1,7 +1,7 @@
 key_count=0;
 score=0;
 value=true;
-
+window.alert(`welcome to dino game press space bar to start the game. use left arrow key to move left and right arrow key to move right`)
 let audio=new Audio('music.mp3')
 audio.loop=true;
 document.onkeydown=function(e){
