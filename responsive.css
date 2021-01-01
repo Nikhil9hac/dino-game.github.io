@@ -1,0 +1,61 @@
+@media only screen and (max-width: 1300px) {
+    .dino img{
+        height: 15vh;
+    }
+    .dragon img{
+        height: 15vh;
+    }
+    .notice{
+        font-size: 30px;
+    }
+    .scoreboard{
+        width: 13%;
+        right: 22px;
+    }
+  }
+  @media only screen and (max-width: 900px){
+    .dino img{
+        height: 12vh;
+    }
+    .dragon img{
+        height: 12vh;
+    }
+    .left-arrow{
+        height: 9%;
+        width: 9%;
+        border-radius: 49px;
+    }
+    .right-arrow{
+        height: 9%;
+        width: 9%;
+        border-radius: 49px;
+    }
+    .animation{
+        animation: dragon_move linear 1.6s infinite ;
+    }
+  }
+  @media only screen and (max-width: 670px){
+    .dino img{
+        height: 10vh;
+    }
+    .dragon img{
+        height: 10vh;
+    }
+    .animation{
+        animation: dragon_move linear 1.8s infinite ;
+    }
+    .dino-jump{
+        animation: dino_move linear 1.3s infinite ;
+    }
+    @keyframes dino_move{
+        0%{
+            bottom: 15%;
+        }
+        50%{
+            bottom: 45%;
+        }
+        100%{
+            bottom: 15%;
+        }
+    }
+  }

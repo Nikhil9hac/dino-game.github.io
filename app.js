@@ -1,7 +1,7 @@
 key_count=0;
 score=0;
 value=true;
-window.alert(`welcome to dino game press space bar to start the game. use left arrow key to move left and right arrow key to move right`)
+// window.alert(`welcome to dino game press space bar to start the game. use left arrow key to move left and right arrow key to move right`)
 let audio=new Audio('music.mp3')
 audio.loop=true;
 document.onkeydown=function(e){
@@ -21,7 +21,7 @@ document.onkeydown=function(e){
         dino.classList.add('dino-jump')
         setTimeout(()=>{
             dino.classList.remove('dino-jump')
-        },1001)
+        },800)
         }
         
     }
@@ -59,14 +59,16 @@ laptop=setInterval(()=>{
         key_count=0;
       
         
-        notice.innerHTML=`gameover-Double-tap-reload<br> <p class="score-design"> your score ${score}</p> <br> <p class="name"> created by sridhar</p>`
+        notice.innerHTML=`<span >gameover-Double-tap-reload</span><br> <p class="score-design" > your score ${score}</p> <br> <p class="name" > created by sridhar</p>`
+        score=0;
+        score.innerHTML=0;
         audio.pause()
         let audio2=new Audio('gameover.mp3')
         audio2.play()
         setTimeout(()=>{
             audio2.pause()
             audio.play()
-        },1800)
+        },1500)
     }
     else if(offsetx<140 &&value){
         score+=1

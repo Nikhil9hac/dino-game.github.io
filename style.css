@@ -31,7 +31,9 @@
 }
 .scoreboard{
     position: absolute;
+    /* position: fixed; */
     right: 38px;
+    top: 30px;
     border: 2px solid black;
     padding: 6px;
     width: 9%;
@@ -88,7 +90,7 @@ button:hover{
    }
 }
 .dino-jump{
-    animation: dino_move linear 1s infinite;
+    animation: dino_move linear 0.8s infinite ;
 }
 @keyframes dino_move{
     0%{
