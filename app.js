@@ -8,6 +8,8 @@ document.onkeydown=function(e){
     audio.play()
     console.log(e.keyCode);
     if(e.keyCode==32){ 
+        notice=document.querySelector('.notice')
+        notice.innerHTML="Welcome To Dino Game"
         key_count+=1;
         console.log(key_count);
         if (key_count==1) {
@@ -55,7 +57,8 @@ laptop=setInterval(()=>{
     if (offsetx<120 && offsety<52) {
         dragon.classList.remove('animation')
         key_count=0;
-        notice=document.querySelector('.notice')
+      
+        
         notice.innerHTML=`gameover-Double-tap-reload<br> <p class="score-design"> your score ${score}</p> <br> <p class="name"> created by sridhar</p>`
         audio.pause()
         let audio2=new Audio('gameover.mp3')
@@ -63,7 +66,7 @@ laptop=setInterval(()=>{
         setTimeout(()=>{
             audio2.pause()
             audio.play()
-        },1500)
+        },1800)
     }
     else if(offsetx<140 &&value){
         score+=1
