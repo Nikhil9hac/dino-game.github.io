@@ -87,7 +87,7 @@ function movement(a){
                 dino.style.left=(dinox+45)+"px";
             }
             else if(dinox<280 &&a=='mobilepart1'){
-                dino.style.left=(dinox+45)+"px";
+                dino.style.left=(dinox+40)+"px";
             }
            
         }
@@ -152,7 +152,7 @@ if (mediaQuery.matches) {
         offsetx=Math.abs(dx-ox)
         offsety=Math.abs(dy-oy)
         console.log(dx);
-        if (offsetx<123 && offsety<75){
+        if (offsetx<119 && offsety<75){
             musicSystem()
         }
         else if(offsetx<75 && value_score){

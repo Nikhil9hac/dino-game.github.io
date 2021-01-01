@@ -132,22 +132,3 @@
     width: 95px;
 }
 }
-@media only screen and (max-width:400px){
-    @keyframes dino1{
-        0%{
-            bottom: 0px;
-        }
-        50%{
-            bottom: 200px;
-        }
-        100%{
-            bottom: 0px;
-        }
-    }
-    .animation{
-        animation: dragon1 1.8s linear infinite;
-    }
-    .dino-animate{
-        animation: dino1 1.2s linear infinite  ;
-    }
-}
