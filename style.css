@@ -79,7 +79,7 @@ button:hover{
     outline: none;
 }
 .animation{
-    animation: dragon_move linear 2.1s infinite ;
+    animation: dragon_move linear 2.3s infinite ;
 }
 @keyframes dragon_move{
     0%{

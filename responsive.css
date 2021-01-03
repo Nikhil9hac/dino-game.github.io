@@ -35,6 +35,9 @@
     }
   }
   @media only screen and (max-width: 670px){
+      .dino{
+          left: 22px;
+      }
     .dino img{
         height: 10vh;
     }
@@ -42,10 +45,10 @@
         height: 10vh;
     }
     .animation{
-        animation: dragon_move linear 1.8s infinite ;
+        animation: dragon_move linear 1.9s infinite ;
     }
     .dino-jump{
-        animation: dino_move linear 1.3s infinite ;
+        animation: dino_move linear 1.2s infinite ;
     }
     @keyframes dino_move{
         0%{
@@ -57,5 +60,25 @@
         100%{
             bottom: 15%;
         }
+    }
+  }
+  @media only screen and (max-width: 670px){
+    .dino img{
+        height: 9.5vh;
+    }
+    .dragon img{
+        height: 9.5vh;
+    }
+    .animation{
+        animation: dragon_move linear 1.7s infinite ;
+    }
+    .dino-jump{
+        animation: dino_move linear 1.4s infinite ;
+    }
+    .notice{
+        font-size: 20px;
+    }
+    .dino{
+        left: 0;
     }
   }
