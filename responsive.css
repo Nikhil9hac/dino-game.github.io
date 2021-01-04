@@ -82,3 +82,12 @@
         left: 0;
     }
   }
+  @media only screen and (max-width: 430px){
+      .notice{
+          font-size: 18px;
+          margin-left: -50px;
+      }
+      .scoreboard{
+          font-size: 13px;
+      }
+  }
